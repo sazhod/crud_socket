@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="CRUD_socket.MyUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRUD_socket"
+             mc:Ignorable="d" >
+    <Grid Background="Aqua">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="{Binding Path=Name}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="{Binding Path=Category.Name}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="{Binding Path=Manufacturer.Name}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="{Binding Path=Count}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Grid.Row="0" Grid.Column="2" Name="DeleteButton" Content="Удалить" Click="DeleteButton_Click"/>
+        <Button Grid.Row="1" Grid.Column="2" Name="BuyButton" Content="Купить" Click="BuyButton_Click"/>
+    </Grid>
+</UserControl>

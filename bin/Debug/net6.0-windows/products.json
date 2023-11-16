@@ -1,0 +1,1 @@
+[{"Id":2,"Name":"product2","Category":{"Id":1,"Name":"category1"},"Manufacturer":{"Id":1,"Name":"man"},"Description":"desc","Count":10,"Price":100},{"Id":3,"Name":"product3","Category":{"Id":2,"Name":"category2"},"Manufacturer":{"Id":1,"Name":"man"},"Description":"desc","Count":10,"Price":100}]
